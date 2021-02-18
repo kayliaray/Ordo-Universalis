@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <script src="../js/all.js"></script>
+    <script src="resources.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <style>
+        a:link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<div class="sidebar-container">
+    <div class="sidebar-logo">
+        Ordo Universalis
+    </div>
+    <ul class="sidebar-navigation">
+        <li class="header">Navigation</li>
+        <li>
+            <a href="../index.html">
+                <i class="fa fa-home" aria-hidden="true"></i> Home
+            </a>
+        </li>
+
+        <li class="header">Tools</li>
+        <li>
+            <a href="./character.html">
+                <i class="fa fa-user" aria-hidden="true"></i> Character Sheet
+            </a>
+        </li>
+        <li>
+            <a href="#" class="current-page">
+                <i class="fas fa-user-plus"></i> Character Creator
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-hat-wizard" aria-hidden="true"></i> Spell Creator
+            </a>
+        </li>
+        <li class="header">Resources</li>
+        <li>
+            <a href="#">
+                <i class="fa fa-info-circle" aria-hidden="true"></i> Rules
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="content-container">
+
+    <div class="container-fluid">
+        <h1>Character Creator</h1>
+        <form action="/create_submit.html">
+
+            <div class="form-group row">
+                <div class="col-auto">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name">
+                </div>
+                <div class="col-auto">
+                    <label for="race">Race</label>
+                    <select id="race" class="form-control" name="race">
+                        <option value="">-- Select --</option>
+                    </select> 
+                </div>
+                    <div class="col-sm-2">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                            Race Details
+                        </button>
+                   
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-auto">
+                        <label for="archetype">Archetype</label>
+                        <input type="text" class="form-control" name="archetype" id="archetype">
+                    </div>
+                    <div class="col-auto">
+                        <label for="sex">Sex</label>
+                        <input type="text" class="form-control" name="sex" id="sex">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-auto">
+                        <label for="home">Home</label>
+                        <input type="text" class="form-control" name="home" id="home">
+                    </div>
+                    <div class="col-auto">
+                        <label for="allegiance">Allegiance(s)</label>
+                        <input type="text" class="form-control" name="allegiance" id="allegiance">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-auto">
+                        <label for="appearance">Eyes/Hair</label>
+                        <input type="text" class="form-control" name="appearance" id="appearance">
+                    </div>
+                    <div class="col-auto">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" name="age" id="age">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-auto">
+                        <label for="body">Height/Weight</label>
+                        <input type="text" class="form-control" name="body" id="body">
+                    </div>
+                    <div class="col-auto">
+                        <label for="other">Other</label>
+                        <input type="text" class="form-control" name="other" id="other">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </form>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        var ele = document.getElementById('race');
+        for (var i = 0; i < races.length; i++) {
+            // POPULATE SELECT ELEMENT WITH JSON.
+            ele.innerHTML = ele.innerHTML +
+                '<option value="' + races[i]['ID'] + '">' + races[i]['Race'] + '</option>';
+        }
+    })
+</script>
