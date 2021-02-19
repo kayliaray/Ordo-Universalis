@@ -23,35 +23,30 @@
 </head>
 <div class="sidebar-container">
     <div class="sidebar-logo">
-        Ordo Universalis
+        <a href="../index.html"></a> Ordo Universalis</a>
     </div>
     <ul class="sidebar-navigation">
-        <li class="header">Navigation</li>
-        <li>
-            <a href="../index.html">
-                <i class="fa fa-home" aria-hidden="true"></i> Home
-            </a>
-        </li>
-
-        <li class="header">Tools</li>
+        <li class="header">Play</li>
         <li>
             <a href="./character.html">
                 <i class="fa fa-user" aria-hidden="true"></i> Character Sheet
             </a>
         </li>
+        <li class="header">Create</li>
+
         <li>
             <a href="#" class="current-page">
                 <i class="fas fa-user-plus"></i> Character Creator
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="../spells/create.html" >
                 <i class="fa fa-hat-wizard" aria-hidden="true"></i> Spell Creator
             </a>
         </li>
-        <li class="header">Resources</li>
+        <li class="header">Learn</li>
         <li>
-            <a href="#">
+            <a href="../rules/index.html">
                 <i class="fa fa-info-circle" aria-hidden="true"></i> Rules
             </a>
         </li>
@@ -60,98 +55,132 @@
 <div class="content-container">
 
     <div class="container-fluid">
-        <h1>Character Creator</h1>
-        <form action="/create_submit.html">
 
-            <div class="form-group row">
-                <div class="col-auto">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" name="name" id="name">
-                </div>
-                <div class="col-auto">
-                    <label for="race">Race</label>
-                    <select id="race" class="form-control" name="race">
-                        <option value="">-- Select --</option>
-                    </select> 
-                </div>
+        <body>
+            <h1>Character Creator</h1>
+            <p class="lead">
+                Use this form to create your Ordo Universalis Character. The result will be a json file you can use with
+                the online Character Sheet.
+            </p>
+            <h2>General Information</h2>
+            <form action="/create_submit.html">
+                <div class="form-group row">
+                    <div class="col-auto">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" name="name" id="name">
+                    </div>
+                    <div class="col-auto">
+                        <label for="race">Race</label>
+                        <select id="race" class="form-control" name="race">
+                            <option value="">-- Select --</option>
+                        </select>
+                    </div>
                     <div class="col-sm-2">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalLong">
                             Race Details
                         </button>
-                   
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-auto">
+                            <label for="archetype">Archetype</label>
+                            <input type="text" class="form-control" name="archetype" id="archetype">
+                        </div>
+                        <div class="col-auto">
+                            <label for="sex">Sex</label>
+                            <input type="text" class="form-control" name="sex" id="sex">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-auto">
+                            <label for="home">Home</label>
+                            <input type="text" class="form-control" name="home" id="home">
+                        </div>
+                        <div class="col-auto">
+                            <label for="allegiance">Allegiance(s)</label>
+                            <input type="text" class="form-control" name="allegiance" id="allegiance">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-auto">
+                            <label for="appearance">Eyes/Hair</label>
+                            <input type="text" class="form-control" name="appearance" id="appearance">
+                        </div>
+                        <div class="col-auto">
+                            <label for="age">Age</label>
+                            <input type="number" class="form-control" name="age" id="age">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-auto">
+                            <label for="body">Height/Weight</label>
+                            <input type="text" class="form-control" name="body" id="body">
+                        </div>
+                        <div class="col-auto">
+                            <label for="other">Other</label>
+                            <input type="text" class="form-control" name="other" id="other">
+                        </div>
+                    </div>
                 </div>
-
-                <div class="form-group row">
-                    <div class="col-auto">
-                        <label for="archetype">Archetype</label>
-                        <input type="text" class="form-control" name="archetype" id="archetype">
-                    </div>
-                    <div class="col-auto">
-                        <label for="sex">Sex</label>
-                        <input type="text" class="form-control" name="sex" id="sex">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-auto">
-                        <label for="home">Home</label>
-                        <input type="text" class="form-control" name="home" id="home">
-                    </div>
-                    <div class="col-auto">
-                        <label for="allegiance">Allegiance(s)</label>
-                        <input type="text" class="form-control" name="allegiance" id="allegiance">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-auto">
-                        <label for="appearance">Eyes/Hair</label>
-                        <input type="text" class="form-control" name="appearance" id="appearance">
-                    </div>
-                    <div class="col-auto">
-                        <label for="age">Age</label>
-                        <input type="number" class="form-control" name="age" id="age">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-auto">
-                        <label for="body">Height/Weight</label>
-                        <input type="text" class="form-control" name="body" id="body">
-                    </div>
-                    <div class="col-auto">
-                        <label for="other">Other</label>
-                        <input type="text" class="form-control" name="other" id="other">
+            </form>
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Ordo Universalis</h5>
+                            <p>
+                                We are a small team of nerds who wanted to make a system that could do anything.
+                                We'll write more here once we learn to brag about ourselves.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">More Stuff</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    Social Media or Something
+                                </li>
+                                <li>
+                                    Blog
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-0">Contact Us</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    Email Or Something
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-
+            </footer>
+            <!-- END Footer -->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Ordo Universalis Races</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Brief Race Descriptions once I have verbiage.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-        </form>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 

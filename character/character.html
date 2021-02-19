@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 
-
-
 <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="resources.js"></script>
@@ -21,48 +19,91 @@
 </head>
 <div class="sidebar-container">
     <div class="sidebar-logo">
-        Ordo Universalis
+        <a href="../index.html"></a> Ordo Universalis</a>
     </div>
     <ul class="sidebar-navigation">
-        <li class="header">Navigation</li>
+        <li class="header">Play</li>
         <li>
-            <a href="../index.html">
-                <i class="fa fa-home" aria-hidden="true"></i> Home
-            </a>
-        </li>
-
-        <li class="header">Tools</li>
-        <li>
-            <a href="#"class="current-page">
+            <a href="#" class="current-page">
                 <i class="fa fa-user" aria-hidden="true"></i> Character Sheet
             </a>
         </li>
-        <li>
-          <a href="./create.html" >
+        <li class="header">Create</li>
 
+        <li>
+            <a href="./character/create.html">
                 <i class="fas fa-user-plus"></i> Character Creator
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="../spells/create.html">
                 <i class="fa fa-hat-wizard" aria-hidden="true"></i> Spell Creator
             </a>
         </li>
-        <li class="header">Resources</li>
+        <li class="header">Learn</li>
         <li>
-            <a href="#">
+            <a href="../rules/index.html">
                 <i class="fa fa-info-circle" aria-hidden="true"></i> Rules
             </a>
         </li>
     </ul>
 </div>
-<div class="content-container">
+<!-- Container for non sidebar stuff-->
+<div class="content-container d-flex flex-column min-vh-100">
     <div class="container-fluid">
-      <input type="file" id="selectFiles" value="Import" /><br />
-      <button id="import">Import</button>
-      <textarea id="result"></textarea>
+
+        <body>
+            <!--Webpage content goes here :)-->
+            <h1>Character Sheet</h1>
+            <p class="lead">
+                Upload a json with Ordo Universalis Character information to use the online character sheet.
+            </p>
+            <h2>Upload</h2>
+            <input type="file" id="selectFiles" value="Import" /><br />
+            <button id="import">Import</button>
+            <textarea id="result"></textarea>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Ordo Universalis</h5>
+                            <p>
+                                We are a small team of nerds who wanted to make a system that could do anything.
+                                We'll write more here once we learn to brag about ourselves.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">More Stuff</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    Social Media or Something
+                                </li>
+                                <li>
+                                    Blog
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-0">Contact Us</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    Email Or Something
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </footer>
+            <!-- END Footer -->
+        </body>
     </div>
 </div>
+<!--End Container for Non Sidebar Stuff-->
+
 <script>
 document.getElementById('import').onclick = function() {
     var files = document.getElementById('selectFiles').files;
