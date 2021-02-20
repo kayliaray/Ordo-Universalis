@@ -125,6 +125,172 @@
                             <input type="text" class="form-control" name="other" id="other">
                         </div>
                     </div>
+
+                    <!-- Someone who isn't terrible at HTML would know if inserting empty paragrah tags -->
+                    <!-- To add vertical spacing is a good idea or not. I just know it works            -->
+                    <p></p>
+                    <h2>Attributes</h2>
+
+                    <div class="form-group row">
+                        <div class="col-auto table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                <tr>
+                                    <th scope="col">1<sup>st</sup> Sphere</th>
+                                    <th scope="col">Rating</th>
+                                    <th scope="col">Maximum</th>
+                                    <th scope="col">Bonus Dice</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Strength</th>
+                                    <td><input type="number" class="form-control form-control-sm " id="str"></td>
+                                    <td id="max_str">-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Dexterity</th>
+                                    <td><input type="number" class="form-control form-control-sm" id="dex"></td>
+                                    <td id="max_dex">-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Awareness</th>
+                                    <td><input type="number" class="form-control form-control-sm" id="awe"></td>
+                                    <td id="max_awe">-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Aptitude</th>
+                                    <td><input type="number" class="form-control form-control-sm" id="apt"></td>
+                                    <td id="max_apt">-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fortitude</th>
+                                    <td><input type="number" class="form-control form-control-sm" id="frt"></td>
+                                    <td id="max_frt">-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Constitution</th>
+                                    <td><input type="number" class="form-control form-control-sm" id="con"></td>
+                                    <td id="max_con">-</td>
+                                    <td>-</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-auto table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <th scope="col">2<sup>nd</sup> Sphere</th>
+                                    <th scope="col">Bonus Dice</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Regimen</th>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Reactions</th>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Brains</th>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Discipline</th>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Toughness</th>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Brawn</th>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-auto table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <th scope="col">3<sup>rd</sup> Sphere</th>
+                                    <th scope="col">Bonus Dice</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Operations</th>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Science</th>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Mental</th>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Leadership</th>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Brute</th>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Physical</th>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- Pad all of the table rows to the height of the single tallest row for consistency -->
+                            <!-- I've known how to code HTML for about 3 hours so forgive me if this is terrible   -->
+                            <!-- For some reason you have to add 3 pixels to the height for it to look good.       -->
+                            <!-- I think maybe it has to do with the line thickness (1.5) of the input control?    -->
+                            <script>
+                                var height = 0;
+                            $('tr').each(
+                                function() {
+                                    var thisHeight = $(this).height();
+                                    if (thisHeight > height) {
+                                        height = thisHeight;
+                                    }
+                                }).css('height',height+3);
+                            </script>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-auto table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="table-light">
+                                    <tr>
+                                        <th scope="col">Class Attr. Pool</th>
+                                        <th scope="col">(Dis)Advantage Mod.</th>
+                                        <th scope="col">Net Attr. Pool</th>
+                                        <th scope="col">Allocated</th>
+                                        <th scope="col">Remaining</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td id="attr_class_pool">-</td>
+                                        <td id="attr_ad_mod">-</td>
+                                        <td id="attr_net_pool">-</td>
+                                        <td id="attr_allocated">-</td>
+                                        <td id="attr_remaining">-</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </form>
     </div>
@@ -193,12 +359,128 @@
 </html>
 
 <script>
+    // Since much the same code needs to be written for each attribute, we declare matching keys and html element IDs
+    // ahead of time, and then write each block of code once with a loop around it to hit all the attributes.
+    var attr_json = ["Strength", "Dexterity", "Awareness", "Aptitude", "Fortitude", "Constitution"]
+    var attr_input = ["str", "dex", "awe", "apt", "frt", "con"]
+    var attr_max = ["max_str", "max_dex", "max_awe", "max_apt", "max_frt", "max_con"]
+    
+    // When the page loads...
     $(document).ready(function () {
-        var ele = document.getElementById('race');
-        for (var i = 0; i < races.length; i++) {
-            // POPULATE SELECT ELEMENT WITH JSON.
-            ele.innerHTML = ele.innerHTML +
-                '<option value="' + races[i]['ID'] + '">' + races[i]['Race'] + '</option>';
-        }
+        let selectHTML = document.getElementById('race').innerHTML
+        //races is imported from resources.js, which isn't really that different from a JSON file to start with.
+        for (let i = 0; i < races.length; i++)
+            selectHTML += '<option value="' + i + '">' + races[i]['Race'] + '</option>';
+        document.getElementById('race').innerHTML = selectHTML;
+
+        // Initialize the display values for all of the derived attribute totals
+        updateAttrMaxima(null, "-");
+        // Initialize the AD mod display
+        updateADDisplay()
+        // Initialize the attributes allocated display
+        updateAttrAllocated()
     })
+
+    // When an option is picked from the race <select> input...
+    document.getElementById("race").onchange = function(e) {
+        let raceid = e.target.value;
+        updateAttrMaxima(raceid? races[raceid] : null, "-");
+    }
+
+
+    // When the value of a numerical attribute input is changed...
+    for (let i=0; i<6; i++) {
+        document.getElementById(attr_input[i]).onchange = function(e) {
+            let value = e.target.value;
+            if (value < 0)
+                e.target.value = 0
+            else  {
+                let max = parseInt(document.getElementById(attr_max[i]).textContent);
+                max = max? max : 0
+                if (value > max)
+                    e.target.value = max
+            }
+            updateAttrAllocated()
+        }
+    }
+
+    // Update the display for the maximum attribute values, as dictated by the player's class
+    // Because the class pool affects the net pool, an update is also called on the net pool
+    // If the raceobject is falsy, display falsyText as a placeholder
+    function updateAttrMaxima(raceobject, falsyText) {
+        if (raceobject) {
+            for (let i=0; i<6; i++)
+                document.getElementById(attr_max[i]).textContent = raceobject[attr_json[i]];
+            let attr_class_pool = raceobject['Strength'] +
+                                  raceobject['Dexterity'] +
+                                  raceobject['Awareness'] +
+                                  raceobject['Aptitude'] +
+                                  raceobject['Fortitude'] +
+                                  raceobject['Constitution'];
+            document.getElementById("attr_class_pool").textContent = attr_class_pool/2 + 12;
+        }
+        else {
+            for (let i=0; i<6; i++)
+                document.getElementById(attr_max[i]).textContent = falsyText;
+            document.getElementById("attr_class_pool").textContent = falsyText;
+        }
+        updateAttrNet(falsyText);
+    }
+
+    // Recalculate the net attribute pool and display the new value. While the AD mod should always be a valid int,
+    // We must verify that attr_class_pool is not falsy (class is unset), else we display falsyText as a placeholder
+    // Because the net attribute pool also affects the remaining attribute tally, we continue propagating the update
+    function updateAttrNet(falsyText) {
+        let attr_class_pool = parseInt(document.getElementById("attr_class_pool").textContent)
+        let attr_ad_mod   = parseInt(document.getElementById("attr_ad_mod").textContent)
+        if (attr_class_pool)
+            document.getElementById("attr_net_pool").textContent = attr_class_pool + attr_ad_mod;
+        else {
+            document.getElementById("attr_net_pool").textContent = falsyText;
+        }
+        updateAttrRemaining(falsyText)
+    }
+
+    // Recalculate the remaining attribute pool and display the new value. While the allocated pool should always be a 
+    // Valid int, we must verify that attr_net_pool is not falsy (class is unset), else we display falsyText as a placeholder
+    function updateAttrRemaining(falsyText) {
+        let attr_net_pool = parseInt(document.getElementById("attr_net_pool").textContent)
+        let attr_allocated = parseInt(document.getElementById("attr_allocated").textContent)
+        let element = document.getElementById("attr_remaining")
+        if (attr_net_pool) {
+            let value = attr_net_pool - attr_allocated
+            element.textContent = value
+            if (value>0)
+                element.style.backgroundColor = "#FFC107"
+            else if (value==0)
+                element.style.backgroundColor = "#AAFFAA"
+            else
+                element.style.backgroundColor = "#FFAAAA"
+        }
+        else
+            document.getElementById("attr_remaining").textContent = falsyText
+    }
+
+    // Recalculate the AD modifier and display the new value on the sheet
+    // For now (since pieces of the UI are missing), assume a modifier of zero
+    // Since the AD modifier affects the net attribute pool, propagate the update
+    function updateADDisplay() {
+        document.getElementById("attr_ad_mod").textContent = 0;
+        // Provide placeholder text for if the class is not set and the net attribute pool cannot be calculated
+        updateAttrNet("-");
+    }
+
+    // Recalculate the sum of the allocated attribute points and display the new value on the sheet
+    // Since the allocated attribute total affects the remaining points, propagate the update
+    function updateAttrAllocated() {
+        let sum = 0;
+        for (let i=0; i<6; i++) {
+            let value = parseInt(document.getElementById(attr_input[i]).value);
+            if (value)
+                sum += value;
+        }
+        document.getElementById("attr_allocated").textContent = sum;
+        // Provide placeholder text for if the class is not set and the remaining attribute points cannot be calculated
+        updateAttrRemaining("-");
+    }
 </script>
