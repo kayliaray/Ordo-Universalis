@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="resources.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./js/all.js"></script>
+</head>
+<div class="sidebar-container">
+    <div class="sidebar-logo">
+        <a id="home-link" href="../index.html"> Ordo Universalis</a>
+    </div>
+    <ul class="sidebar-navigation">
+        <li class="header">Play</li>
+        <li>
+            <a href="./character/character.html">
+                <i class="fa fa-user" aria-hidden="true"></i> Character Sheet
+            </a>
+        </li>
+        <li class="header">Create</li>
+
+        <li>
+            <a href="./character/create.html">
+                <i class="fas fa-user-plus"></i> Character Creator
+            </a>
+        </li>
+        <li>
+            <a href="./spells/create.html">
+                <i class="fa fa-hat-wizard" aria-hidden="true"></i> Spell Creator
+            </a>
+        </li>
+        <li class="header">Learn</li>
+        <li>
+            <a href="./rules/index.html">
+                <i class="fa fa-info-circle" aria-hidden="true"></i> Rules
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- Container for non sidebar stuff-->
+<div class="content-container">
+    <div class="container-fluid">
+
+        <body>
+            <!--Webpage content goes here :)-->
+            <h1>Spheres</h1>
+            <p class="lead">
+                Spheres summarize the physical and mental capabilities of every being in Ordo Universalis.
+                There are three spheres. The first sphere quantifies the core attributes of a creature.
+                General skills are found in the second sphere. Specializations rest in the third and last sphere. 
+            </p>
+            <h2>First Sphere</h2>
+            <p>
+                The first sphere is a building block for every creature. Each sphere pulls from its predecessor,
+                and the first sphere precedes them all. Every roll in the game uses the dice determined by the 
+                first sphere. There are three physical and three mental attributes that make up this sphere.
+            </p>
+            <ul>
+                <li><strong>Constitution</strong> = physical cohesiveness</li>
+                <li><strong>Strength</strong> = physical muscle</li>
+                <li><strong>Dexterity</strong> = physical agility and flexibility</li>
+                <li><strong>Awareness</strong> = connection to surroundings</li>
+                <li><strong>Aptitude</strong> = ability to process data</li>
+                <li><strong>Fortitude</strong> = a force of will</li>
+            </ul>
+            <p>
+                These 1st sphere attributes are closely related to a creature's anatomy. This is why their 
+                maximum ratings have a biological limit. The human average for these attributes is 6. However, 
+                humans have a biological limit of 14 in each of these 1st sphere attributes. Consider what 
+                physical and mental fit you need for the character you want to create. 
+            </p>
+            <p>
+                Each attribute has dice which stems from their respected score. Three is the score at which 
+                there are no dice rolled for that attribute. Every other point, after 3, in your attribute will increase 
+                your dice size by 2, to a limit of 12. Once you reach a d12 the process repeats, keeping the
+                earlier d12 in the roll. The Attributes and Dice table shows this process.
+            </p>
+            <h2>Second Sphere</h2>
+            <p>
+                The 2nd sphere attributes in Ordo Universalis shows how important the 1st sphere attributes 
+                are. Two 1st sphere attributes make one 2nd sphere attribute. These combinations allow for 
+                rolls with both 1st sphere attributes die on each related event. The following 2nd sphere 
+                attributes make up this sphere.
+            </p>
+            <ul>
+              <li><strong>Regimen</strong> = Strength + Dexterity</li>
+              <li><strong></strong> = Dexterity + Awareness</li>
+              <li><strong></strong> = Awareness + Aptitude</li>
+              <li><strong></strong> = Aptitude + Fortitude</li>
+              <li><strong></strong> = Fortitude + Constitution</li>
+              <li><strong></strong> = Constitution + Strength</li>
+            </ul>
+            <h2>Third Sphere</h2>
+            <p>
+                The last and most specialized sphere is the third sphere. Every 3rd sphere attribute comes from
+                three 1st sphere attributes. These are very precise attributes that hone in on a creature's unique 
+                abilities. The following 3rd sphere attributes make up this sphere.
+            </p>
+            <ul>
+              <li><strong>Operations</strong> = Strength + Dexterity + Awareness</li>
+              <li><strong>Technique</strong> = Dexterity + Awareness + Aptitude</li>
+              <li><strong>Mental</strong> = Awareness + Aptitude + Fortitude</li>
+              <li><strong>Leadership</strong> = Aptitude + Fortitude + Constitution</li>
+              <li><strong>Brute</strong> = Fortitude + Constitution + Strength</li>
+              <li><strong>Physical</strong> = Constitution + Strength + Dexterity</li>
+            </ul>
+    </div>
+    <!-- Footer -->
+    <div class="footer-wrapper">
+        <div class="footer-bg"></div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <h5 class="text-uppercase">Ordo Universalis</h5>
+                        <p>
+                            We are a small team of nerds who wanted to make a system that could do anything.
+                            We'll write more here once we learn to brag about ourselves.
+                        </p>
+                    </div>
+                    <div class="col-sm">
+                        <h5 class="text-uppercase">More Stuff</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                Social Media or Something
+                            </li>
+                            <li>
+                                Blog
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h5 class="text-uppercase mb-0">Contact Us</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                Email Or Something
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Footer -->
+    </body>
+
+</div>
+<!--End Container for Non Sidebar Stuff-->
