@@ -19,7 +19,7 @@
 </head>
 <div class="sidebar-container">
     <div class="sidebar-logo">
-        <a href="../index.html"></a> Ordo Universalis</a>
+        <a id="home-link" href="./index.html"> Ordo Universalis</a>
     </div>
     <ul class="sidebar-navigation">
         <li class="header">Play</li>
@@ -63,66 +63,67 @@
             <input type="file" id="selectFiles" value="Import" /><br />
             <button id="import">Import</button>
             <textarea id="result"></textarea>
-</div>
-<!--End container for main content-->
-                <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h5 class="text-uppercase">Ordo Universalis</h5>
-                    <p>
-                        We are a small team of nerds who wanted to make a system that could do anything.
-                        We'll write more here once we learn to brag about ourselves.
-                    </p>
-                </div>
-                <div class="col-sm">
-                    <h5 class="text-uppercase">More Stuff</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            Social Media or Something
-                        </li>
-                        <li>
-                            Blog
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm">
-                    <h5 class="text-uppercase mb-0">Contact Us</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            Email Or Something
-                        </li>
-                    </ul>
+    </div>
+    <!--End container for main content-->
+    <!-- Footer -->
+    <div class="footer-wrapper">
+        <div class="footer-bg"></div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <h5 class="text-uppercase">Ordo Universalis</h5>
+                        <p>
+                            We are a small team of nerds who wanted to make a system that could do anything.
+                            We'll write more here once we learn to brag about ourselves.
+                        </p>
+                    </div>
+                    <div class="col-sm">
+                        <h5 class="text-uppercase">More Stuff</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                Social Media or Something
+                            </li>
+                            <li>
+                                Blog
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h5 class="text-uppercase mb-0">Contact Us</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                Email Or Something
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-
-
     </div>
     <!-- END Footer -->
-        </body>
-    
+    </body>
+
 </div>
 <!--End Container for Non Sidebar Stuff-->
 
 <script>
-document.getElementById('import').onclick = function() {
-    var files = document.getElementById('selectFiles').files;
-  console.log(files);
-  if (files.length <= 0) {
-    return false;
-  }
+    document.getElementById('import').onclick = function () {
+        var files = document.getElementById('selectFiles').files;
+        console.log(files);
+        if (files.length <= 0) {
+            return false;
+        }
 
-  var fr = new FileReader();
+        var fr = new FileReader();
 
-  fr.onload = function(e) { 
-  console.log(e);
-    var result = JSON.parse(e.target.result);
-    var formatted = JSON.stringify(result, null, 2);
-        document.getElementById('result').value = formatted;
-  }
+        fr.onload = function (e) {
+            console.log(e);
+            var result = JSON.parse(e.target.result);
+            var formatted = JSON.stringify(result, null, 2);
+            document.getElementById('result').value = formatted;
+        }
 
-  fr.readAsText(files.item(0));
-};
+        fr.readAsText(files.item(0));
+    };
 </script>
