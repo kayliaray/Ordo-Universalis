@@ -17,10 +17,13 @@
     <link href="../css/style.css" rel="stylesheet">
     <script src="../js/all.js"></script>
 </head>
-<div class="sidebar-container">
+<div>
     <div class="sidebar-logo">
         <a id="home-link" href="../index.html"> Ordo Universalis</a>
     </div>
+</div>
+<div class="sidebar-container">
+
     <ul class="sidebar-navigation">
         <li class="header">Play</li>
         <li>
@@ -46,14 +49,20 @@
                 <i class="fa fa-info-circle" aria-hidden="true"></i> Rules
             </a>
         </li>
+        <ul>
+            <li><a href="../rules/spheres.html">Spheres</a></li>
+            <li><a href="../rules/skills.html">Skills</a></li>
+        </ul>
     </ul>
 </div>
 <!-- Container for non sidebar stuff-->
 <div class="content-container">
-    <!--Container for main content-->
-    <div class="container-fluid">
 
-        <body>
+    <body>
+        <!--Container for main content-->
+        <div class="container-fluid">
+
+
             <!--Webpage content goes here :)-->
             <h1>Character Sheet</h1>
             <p class="lead">
@@ -63,11 +72,12 @@
             <input type="file" id="selectFiles" value="Import" /><br />
             <button id="import">Import</button>
             <textarea id="result"></textarea>
-    </div>
-    <!--End container for main content-->
-    <!-- Footer -->
-    <div class="footer-wrapper">
-        <div class="footer-bg"></div>
+
+            <!--End container for main content-->
+            <!-- Footer -->
+
+        </div>
+        <!--End Container for Non Sidebar Stuff-->
         <div class="footer">
             <div class="container">
                 <div class="row">
@@ -100,12 +110,9 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- END Footer -->
+        <!-- END Footer -->
     </body>
-
 </div>
-<!--End Container for Non Sidebar Stuff-->
 
 <script>
     document.getElementById('import').onclick = function () {
