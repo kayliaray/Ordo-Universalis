@@ -85,7 +85,7 @@
 }
 
 .sidebar-navigation .header {
-  font-size: 1.25em;
+  font-size: 1.15em;
   text-transform: uppercase;
   background-color: var(--ou-light-grey);
   padding: 10px 15px 10px 30px;
@@ -111,7 +111,7 @@ th.bg-orange:nth-child(1), th.bg-orange:nth-child(2), th.bg-orange:nth-child(3) 
 }
 
 #home-link {
-  color: white;
+  color: var(--ou-med-grey);
 }
 
 .container-fluid {
