@@ -727,215 +727,268 @@ var drawbacks = [
 var generalSkills=[
   {
     "General Skill": "Armed Combat",
-    "Sphere": "Regimen"
+    "Sphere": "Regimen",
+    "Description": "Proficiency with melee weapons."
   },
   {
     "General Skill": "Small Arms",
-    "Sphere": "Regimen"
+    "Sphere": "Regimen", 
+    "Description": "Proficiency with portable firearms."
   },
   {
     "General Skill": "Projectile",
-    "Sphere": "Regimen"
+    "Sphere": "Regimen",
+    "Description": "Proficiency with ranged weapons and spellcasting."
   },
   {
     "General Skill": "Unarmed Combat (Brute)",
-    "Sphere": "Brawn"
+    "Sphere": "Brawn",
+    "Description": "Proficiency of hand-to-hand combat using force and raw power."
   },
   {
     "General Skill": "Unarmed Combat (Disciplined)",
-    "Sphere": "Regimen"
+    "Sphere": "Regimen",
+    "Description": "Proficiency of hand-to-hand combat using agility and martial arts."
   },
   {
     "General Skill": "Pilot, Small Vehicle",
-    "Sphere": "Reaction"
+    "Sphere": "Reaction",
+    "Description": "Proficiency in controlling and operating small vehicles, such as motorcycles and cars."
   },
   {
     "General Skill": "Pilot, Heavy Vehicle",
-    "Sphere": "Reaction"
+    "Sphere": "Reaction",
+    "Description": "Proficiency in controlling and operating large vehicles, such as military transport vehicles and military fighting vehicles."
   },
   {
     "General Skill": "Pilot, Boat",
-    "Sphere": "Reaction"
+    "Sphere": "Reaction",
+    "Description": "Proficiency in controlling and operating aquatic vehicles, such as sailing ships and submarines."
   },
   {
     "General Skill": "Pilot, Rotorcraft",
-    "Sphere": "Reaction"
+    "Sphere": "Reaction",
+    "Description": "Proficiency in controlling and operating rotary-wing aircraft, such as helicopters and tiltwings."
   },
   {
     "General Skill": "Pilot, Winged Aircraft",
-    "Sphere": "Reaction"
+    "Sphere": "Reaction",
+    "Description": "Proficiency in controlling and operating fixed-winged aircraft, such as airplanes and gliders."
   },
   {
     "General Skill": "Pilot, Orbital Shuttle",
-    "Sphere": "Reaction"
+    "Sphere": "Reaction",
+    "Description": "I have no idea what this is."
   },
   {
     "General Skill": "Pilot, Spacecraft",
-    "Sphere": "Reaction"
+    "Sphere": "Reaction",
+    "Description": "I have no idea what this is."
   },
   {
     "General Skill": "Pilot, Mechanoid",
-    "Sphere": "Reaction"
+    "Sphere": "Reaction",
+    "Description": "Proficiency in controlling and operating pilotable robots, such as light mechs and assault mechs."
   },
   {
     "General Skill": "Pilot, Powered Armor",
-    "Sphere": "Reaction"
+    "Sphere": "Reaction",
+    "Description": "Proficiency in controlling and operating wearable mobile machines, such as power armor and construction armor"
   },
   {
     "General Skill": "Pilot, Self-Powered Flight",
-    "Sphere": "Regimen"
+    "Sphere": "Regimen",
+    "Description": "I have no idea what this is."
   },
   {
     "General Skill": "Demolition",
-    "Sphere": "Brains"
+    "Sphere": "Brains",
+    "Description": "Proficiency in creating and handling explosives."
   },
   {
     "General Skill": "Covert",
-    "Sphere": "Brains"
+    "Sphere": "Brains",
+    "Description": "Proficiency in being unditectable by other creatures."
   },
   {
     "General Skill": "First Aid",
-    "Sphere": "Brains"
+    "Sphere": "Brains",
+    "Description": "Proficiency in providing basic medical care to any persons suffering from illness or injury."
   },
   {
     "General Skill": "Computer",
-    "Sphere": "Brains"
+    "Sphere": "Brains",
+    "Description": "Proficiency in controlling and operating electronic devices that manipulates or stores data."
   },
   {
     "General Skill": "Electronics",
-    "Sphere": "Brains"
+    "Sphere": "Brains",
+    "Description": "Proficiency in controlling and operating electronic devices that compute systems for other electronic devices."
   },
   {
     "General Skill": "Biology",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the study of living organisms."
   },
   {
     "General Skill": "Physical Science",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the study of non-living systems."
   },
   {
     "General Skill": "Natural Science",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Profiency in the study of natural phenomenons."
   },
   {
     "General Skill": "Math",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the study of numbers, shapes and patterns."
   },
   {
     "General Skill": "Psychology",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the study of the mind."
   },
   {
     "General Skill": "Sociology",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the study of relationships and institutions."
   },
   {
     "General Skill": "Artistry",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the workmanship of art."
   },
   {
     "General Skill": "Music",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the workmanship of sound."
   },
   {
     "General Skill": "Engineering",
-    "Sphere": "Brains"
+    "Sphere": "Brains",
+    "Description": "Proficiency in designing and building things."
   },
   {
     "General Skill": "Language (specify language)",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in this system of communication."
   },
   {
     "General Skill": "Etiquette",
-    "Sphere": "Toughness"
+    "Sphere": "Toughness",
+    "Description": "Proficiency in the politeness of conduct among certain members of society."
   },
   {
     "General Skill": "Interrogation",
-    "Sphere": "Toughness"
+    "Sphere": "Toughness",
+    "Description": "Proficiency in the process of questioning a creature."
   },
   {
     "General Skill": "Persuasion",
-    "Sphere": "Toughness"
+    "Sphere": "Toughness",
+    "Description": "Proficiency in the act of altering the belief of a creature."
   },
   {
     "General Skill": "Acting",
-    "Sphere": "Toughness"
+    "Sphere": "Toughness",
+    "Description": "Proficiency in representing a character."
   },
   {
     "General Skill": "Leadership",
-    "Sphere": "Toughness"
+    "Sphere": "Toughness",
+    "Description": "Proficiency in motivating others."
   },
   {
     "General Skill": "Strategy",
-    "Sphere": "Toughness"
+    "Sphere": "Toughness",
+    "Description": "Proficiency in creating a plan to achieve a goal."
   },
   {
     "General Skill": "Gunnery",
-    "Sphere": "Brawn"
+    "Sphere": "Brawn",
+    "Description": "Proficiency in handling guns and understanding the science of flight projectiles."
   },
   {
     "General Skill": "Athletics (Raw)",
-    "Sphere": "Brawn"
+    "Sphere": "Brawn",
+    "Description": "Proficiency in activities that require speed and strength."
   },
   {
     "General Skill": "Athletics (Disciplined)",
-    "Sphere": "Regimen"
+    "Sphere": "Regimen",
+    "Description": "Proficiency in activities that require flexibility and skill."
   },
   {
     "General Skill": "Concentration",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the five senses and ability to focus attention."
   },
   {
     "General Skill": "Perception",
-    "Sphere": "Brains"
+    "Sphere": "Brains",
+    "Description": "Proficiency in interpreting information."
   },
   {
     "General Skill": "Animal Handling",
-    "Sphere": "Brains"
+    "Sphere": "Brains",
+    "Description": "Proficiency in interaction with non-humanoid characters."
   },
   {
     "General Skill": "Flesh Magic",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the magical domain of healing and necromancy."
   },
   {
     "General Skill": "Earth Magic",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the magical domain of protection and conjuration."
   },
   {
     "General Skill": "Air Magic",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the magical domain of divination, illusion and transportation."
   },
   {
     "General Skill": "Water Magic",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the magical domain of enchantment and transmutation."
   },
   {
     "General Skill": "Fire Magic",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the magical domain of energy."
   },
   {
     "General Skill": "Alchemy",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the magical process of transformation, creation and combination."
   },
   {
     "General Skill": "Magic Device",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the crafstmanship of magical items."
   },
   {
     "General Skill": "Magic Theory",
-    "Sphere": "Discipline"
+    "Sphere": "Discipline",
+    "Description": "Proficiency in the study of magic."
   },
   {
     "General Skill": "Farming",
-    "Sphere": "Toughness"
+    "Sphere": "Toughness",
+    "Description": "Proficiency in growing crops and raising livestock."
   },
   {
     "General Skill": "Dodge",
-    "Sphere": "Reaction"
+    "Sphere": "Reaction",
+    "Description": "Proficiency in avoiding danger."
   },
   {
     "General Skill": "Defend",
-    "Sphere": "Regimen"
+    "Sphere": "Regimen",
+    "Description": "Proficiency in resisting danger."
   }
  ]
 
@@ -1118,75 +1171,75 @@ var specializations=[
   },
   {
     "Specialization": "Helicopter",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Tiltwing",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Prop driven",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Jet, small",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Jet, large",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Glider",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Military (specify species)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Commercial (specify species)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Research (specify species)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Recreational (specify species)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Military (specify species)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Commercial (specify species)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Research (specify species)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Recreational (specify species)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Light Mech",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Medium Mech",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Heavy Mech",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Assault Mech",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Combat Armor",
@@ -1210,35 +1263,35 @@ var specializations=[
   },
   {
     "Specialization": "IED",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Bomb/Warhead Assembly",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Energy Weapons (area effect)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Demolition Engineering",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Hide",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Move Silently",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Camouflage (specify ecology)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Stealth (specify culture)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Cyber (specify culture)",
@@ -1246,7 +1299,7 @@ var specializations=[
   },
   {
     "Specialization": "Forgery",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Infiltration (specify culture)",
@@ -1254,15 +1307,15 @@ var specializations=[
   },
   {
     "Specialization": "Sabotage",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Slip Locks",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Slight of Hand",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Surveillance/Hunting",
@@ -1270,7 +1323,7 @@ var specializations=[
   },
   {
     "Specialization": "Pharmacology",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Internal Medicine",
@@ -1278,11 +1331,11 @@ var specializations=[
   },
   {
     "Specialization": "Surgery",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Dentistry",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Forensics",
@@ -1294,7 +1347,7 @@ var specializations=[
   },
   {
     "Specialization": "Neurology",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Toxicology",
@@ -1302,11 +1355,11 @@ var specializations=[
   },
   {
     "Specialization": "Veterinary Medicine",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Hardware",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Software",
@@ -1326,7 +1379,7 @@ var specializations=[
   },
   {
     "Specialization": "Hacking",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Control Systems",
@@ -1510,15 +1563,15 @@ var specializations=[
   },
   {
     "Specialization": "Architecture",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Maintenance (specify system)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Repair/Fabricate (specify medium)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Code breaking",
@@ -1806,7 +1859,7 @@ var specializations=[
   },
   {
     "Specialization": "Gambling",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Veterinary (specify ecology)",
@@ -1814,11 +1867,11 @@ var specializations=[
   },
   {
     "Specialization": "Training (specify species)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Riding (specify species)",
-    "Sphere": "Science"
+    "Sphere": "Technique"
   },
   {
     "Specialization": "Individual Spell (specify spell)",
